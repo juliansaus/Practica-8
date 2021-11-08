@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int cont, num;
+    cont = 5;
+    while (--cont >= 0)
+    {
+        num = 0;
+        while(num >= cont)
+        {
+            num = num + 1;
+            (printf("%d")), num;
+        }
+            printf("\n");
+    }
+    return 0;
+}
