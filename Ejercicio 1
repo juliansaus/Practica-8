@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+int main()
+{
+    int cont, ast, esp;
+   
+    //Sección A
+    cont = 11;
+    while (--cont >= 0)
+    {
+        ast = 10;
+        while(--ast >= cont)
+        {
+            printf("*");
+        }
+            printf("\n");
+    }
+    
+    printf("\n");
+    
+    //Sección B
+    cont = 11;
+    while (--cont >= 0)
+    {
+        ast = 0;
+        while(++ast <= cont)
+        {
+            printf("*");
+        }
+            printf("\n");
+    }
+    
+    //Sección C
+    cont = 11;
+    while (--cont >= 0)
+    {
+        esp = 10;
+        while(--esp >= cont)
+        {
+            printf(" ");
+        }
+        ast = 0;
+        while(++ast <= cont)
+        {
+            printf("*");
+        }
+            printf("\n");
+    }
+    
+    //Sección D
+    cont = 11;
+    while (--cont >= 0)
+    {
+        esp = 0;
+        while(++esp <= cont)
+        {
+            printf(" ");
+        }
+        ast = 10;
+        while(--ast >= cont)
+        {
+            printf("*");
+        }
+            printf("\n");
+    }
+
+    return 0;
+}
