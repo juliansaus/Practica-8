@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+int main()
+{
+    int voto, uno = 0, dos = 0, tres = 0, cuatro = 0, cinco = 0, total = 0;
+    float porc1, porc2, porc3, porc4, porc5;
+    do
+    {
+        printf(" --- Elecciones 2018 ---\n");
+        printf("\n¿Por quién desea votar?\n");
+        printf("1) Pedro\n");
+        printf("2) Juan\n");
+        printf("3) Chucho\n");
+        printf("4) Paco\n");
+        printf("5) Lucas\n");
+        printf("6) Terminar votación\n");
+        scanf("%d",&voto);
+        switch(voto)
+        {
+            case 1:
+                total = total + 1;
+                uno = uno + 1;
+                printf("Votó por Pedro.\n");
+                break;
+            case 2:
+                total = total + 1;
+                dos = dos + 1;
+                printf("Votó por Juan.\n");
+                break;
+            case 3:
+                total = total + 1;
+                tres = tres + 1;
+                printf("Votó por Chucho.\n");
+                break;
+            case 4:
+                total = total + 1;
+                cuatro = cuatro + 1;
+                printf("Votó por Paco.\n");
+                break;
+            case 5:
+                total = total + 1;
+                cinco = cinco + 1;
+                printf("Votó por Lucas.\n");
+                break;
+            case 6:
+                printf("\tVotación concluida.\n");
+                break;
+            default:
+                printf("\tOpción inválida.\n");
+        }
+    
+    }
+    while (voto != 6);
+    porc1 = (uno / total)* 100;
+    porc2 = (dos / total)* 100;
+    porc3 = (tres / total)* 100;
+    porc4 = (cuatro / total)* 100;
+    porc5 = (cinco / total)* 100;
+    printf("El total de votos fue: %d.\n", total);
+    printf("El candidato Pedro obtuvo %d votos, siendo un %f%% del total.\n", uno, porc1);
+    printf("El candidato Juan obtuvo %d votos, siendo un %f%% del total.\n", dos, porc2);
+    printf("El candidato Chucho obtuvo %d votos, siendo un %f%% del total.\n", tres, porc3);
+    printf("El candidato Paco obtuvo %d votos, siendo un %f%% del total.\n", cuatro, porc4);
+    printf("El candidato Lucas obtuvo %d votos, siendo un %f%% del total.\n", cinco, porc5);
+    return 0;
+}
+//La única diferencia es que en el ciclo do while la condición se pone al final.
