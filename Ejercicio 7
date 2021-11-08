@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, num2, cont = 0, cont2= 0;
+    printf("Ingrese un número para obtener su tabla de multiplicar: \n");
+    scanf("%d", &num);
+    printf("La tabla de multiplicar del %d es:\n", num);
+    while (++cont <= 10)
+    printf("%d x %d = %d\n", num, cont, num*cont);
+    
+    printf("\n");
+    
+    printf("Ingrese otro número para obtener su tabla de multiplicar: \n");
+    scanf("%d", &num2);
+    printf("La tabla de multiplicar del %d es:\n", num2);
+    while (++cont2 <= 10)
+    printf("%d x %d = %d\n", num2, cont2, num2*cont2);
+    return 0;
+}
