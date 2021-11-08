@@ -1,0 +1,21 @@
+#include <stdio.h>
+#define fin 100
+int main()
+{
+    int num = 10;
+    do
+    {
+        printf("%d\n", num);
+        num = num + 10;
+    }
+    while (num <= fin);
+    
+    printf("\n");
+    
+    for (int num = 10; num <= fin;)
+    {
+        printf("%d\n", num);
+        num = num + 10;
+    }
+    return 0;
+}
