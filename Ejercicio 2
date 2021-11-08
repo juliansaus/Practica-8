@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, pot, potfinal = 0, numfinal;
+    printf("Ingrese un número.\n");
+    scanf("%i", &num);
+    printf("Ingrese una potencia.\n");
+    scanf("%i", &pot);
+    numfinal = num;
+    while (++potfinal < pot)
+    {
+        numfinal = numfinal * num;
+    }
+    printf("%i a la %i es igual a %i.", num, pot, numfinal);
+    printf("\n");
+    return 0;
+}
